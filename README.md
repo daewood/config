@@ -10,13 +10,7 @@ Golang Tools Config Support：
 ## Install
 
 ```
-go get github.com/dingdayu/golangtools/config
-```
-
-Or
-
-```
-go get gitee.com/dingdayu/golangtools/config
+go get github.com/dingdayu/deawood/config
 ```
 
 
@@ -25,7 +19,7 @@ go get gitee.com/dingdayu/golangtools/config
 ### json
 
 ```
-	// 实例
+	
 	type Instance struct {
 		Name 	string
 		Path	string
@@ -33,7 +27,7 @@ go get gitee.com/dingdayu/golangtools/config
 		User	string
 	}
 
-	// 配置
+	
 	type Config struct {
 		Port int
 		Instance []Instance
@@ -54,15 +48,11 @@ go run ../example/config/main.go -c ../example/config/conf.json
 {8080 [{gitbook /gitbook [ll ls] dingdayu}]}
 ```
 
-> 请注意路径！
-
-> 参见 [example/config/main.go](example/config/main.go)
-
 ### xml
 
 
 ```
-	// 实例
+
 	type Instance struct {
 		Name 	string
 		Path	string
@@ -70,7 +60,7 @@ go run ../example/config/main.go -c ../example/config/conf.json
 		User	string
 	}
 
-	// 配置
+	
 	type Config struct {
 		Port int
 		Instance []Instance
@@ -84,13 +74,13 @@ go run ../example/config/main.go -c ../example/config/conf.json
 	fmt.Println(conf)
 ```
 
-> 参加 [example/config/main.go](example/config/main.go)
+
 
 ### toml
 
 
 ```
-	// 实例
+	
 	type Instance struct {
 		Name 	string
 		Path	string
@@ -98,7 +88,7 @@ go run ../example/config/main.go -c ../example/config/conf.json
 		User	string
 	}
 
-	// 配置
+	
 	type Config struct {
 		Port int
 		Instance []Instance
@@ -112,13 +102,12 @@ go run ../example/config/main.go -c ../example/config/conf.json
 	fmt.Println(conf)
 ```
 
-> 参见 [example/config/main.go](example/config/main.go)
 
 ### yaml
 
 
 ```
-	// 实例
+	
 	type Instance struct {
 		Name 	string
 		Path	string
@@ -126,7 +115,7 @@ go run ../example/config/main.go -c ../example/config/conf.json
 		User	string
 	}
 
-	// 配置
+	
 	type Config struct {
 		Port int
 		Instance []Instance
@@ -140,4 +129,3 @@ go run ../example/config/main.go -c ../example/config/conf.json
 	fmt.Println(conf)
 ```
 
-> 参见 [example/config/main.go](example/config/main.go)
