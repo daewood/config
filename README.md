@@ -10,7 +10,7 @@ Golang Tools Config Support：
 ## Install
 
 ```
-go get github.com/dingdayu/deawood/config
+go get github.com/deawood/config
 ```
 
 
@@ -39,13 +39,6 @@ go get github.com/dingdayu/deawood/config
 		fmt.Println(err.Error())
 	}
 	fmt.Println(conf)
-```
-
-Run:
-
-```
-go run ../example/config/main.go -c ../example/config/conf.json
-{8080 [{gitbook /gitbook [ll ls] dingdayu}]}
 ```
 
 ### xml
